@@ -10,7 +10,7 @@ class LectureController extends Controller
 {
     public function index(): JsonResponse
     {
-        return response()->json(Lecture::all());
+        return JsonResponse::make(Lecture::all());
     }
 
     /*public function show($id): \Illuminate\Database\Eloquent\Model|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Builder|array|null
